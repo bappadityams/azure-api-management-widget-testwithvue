@@ -110,7 +110,7 @@ export default {
         
         const [secrets1] = await Promise.all([this.secretsPromise])
         const token = `${secrets1.token}`; // Replace with your actual token
-        
+        console.log('token->', token)
         const axiosInstance = axios.create({
           headers: {
             Authorization: `Bearer ${token}`,
